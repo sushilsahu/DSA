@@ -1,6 +1,9 @@
 package arrays.recurssion.DP;
 
-
+// Given an array of integers nums, an integer target, and an integer n, return the first n numbers in nums that add up to target. If there are multiple combinations, return the one that appears first in the array. If there is no combination that adds up to target, return an empty array.
+// This solution is implemented using memoization to optimize the recursive calls by storing previously computed results in a 3D boolean array. The helper function checks both including and excluding the current element and updates the dp array accordingly to avoid redundant calculations.
+// But Not 100% correct
+// Try not to use This approach.
 public class NSumProblemFirstOccuranceMemoization {
     public static void main(String[] args) {
         int[] nums = {2,7,11,15,4,6,9,0,13};

@@ -3,7 +3,12 @@ package arrays.recurssion.DP;
 import java.util.ArrayList;
 import java.util.List;
 
+// Given an array of integers nums, an integer target, and an integer n, return all unique combinations of n numbers in nums that add up to target. Each combination should be a list of integers, and the result should be a list of these combinations. If there are no combinations that add up to target, return an empty list.
+// This solution is implemented using memoization to optimize the recursive calls by storing previously computed results in a 3D boolean array. The helper function checks both including and excluding the current element and updates the dp array accordingly to avoid redundant calculations. The function also ensures that only unique combinations are added to the result list by using a set to track the combinations that have already been added.
+// But Not 100% correct
+// Try not to use This approach.
 public class NSumProblemAllMemoization {
+
 
     public static void main(String[] args) {
         int[] nums = {2,7,11,15,4,6,9,0,13};
